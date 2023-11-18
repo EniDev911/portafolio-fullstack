@@ -49,7 +49,7 @@
             }
             const textsToChange = document.querySelectorAll("[data-section]");
             const changeLang = async language => {
-                const requestJSON = await fetch(`/assets/langs/${language}.json`),
+                const requestJSON = await fetch(`./assets/langs/${language}.json`),
                     data = await requestJSON.json();
                 textsToChange.forEach(textToChange => {
                     const section = textToChange.dataset.section,

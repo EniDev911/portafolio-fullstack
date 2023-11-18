@@ -7,22 +7,23 @@
 svg {
     height:100%;
     width: 100%;
-    transition: transform .2s ease;
+    transition-property: transform, filter;
+    transition-duration: .3s;
+    transition-timing-function: ease;
     object-fit: cover;
+    filter: saturate(0%);
 }
-.hover {
-    fill: #888 !important;
-}
+
 .hover:hover {
-  fill: red !important;
   transform: scale(1.16);
+  filter: grayscale(0);
 }
 
 </style>
 <div class="container">
-    <div class="row">
+    <div class="row g-4">
         {% for skill in site.data.skills %}
-        <div class="col d-flex align-items-center flex-column">
+        <div class="col d-flex align-items-center justify-content-center flex-column">
             <div class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="hover">  
                     <use href="{{ '/assets/logos/icons.svg' | relative_url }}#{{skill}}" />
