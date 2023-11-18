@@ -1,0 +1,35 @@
+<style>
+.icon {
+    width: 100px;
+    height: 100px;
+    overflow: visible;
+}
+svg {
+    height:100%;
+    width: 100%;
+    transition: transform .2s ease;
+    object-fit: cover;
+}
+.hover {
+    fill: #888 !important;
+}
+.hover:hover {
+  fill: red !important;
+  transform: scale(1.16);
+}
+
+</style>
+<div class="container">
+    <div class="row">
+        {% for skill in site.data.skills %}
+        <div class="col d-flex align-items-center flex-column">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="hover">  
+                    <use href="{{ '/assets/logos/icons.svg' | relative_url }}#{{skill}}" />
+                </svg>
+            </div>
+            <span class="text-uppercase">{{ skill }}</span>
+        </div>
+        {% endfor %}
+    </div>
+</div>

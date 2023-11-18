@@ -1,0 +1,30 @@
+{% capture links_popover %}
+<a href='//github.com/enidev911' 
+  class='text-decoration-none'
+  target='_blank'>
+  <img src='//raw.githubusercontent.com/EniDev911/assets/main/svg/software/github.svg' height='25'>
+</a>
+<a href='https://www.linkedin.com/in/marco-contreras-herrera-9b6952213/' 
+  class='text-decoration-none'
+  target='_blank'>
+  <img src='https://cdn-icons-png.flaticon.com/512/61/61109.png?w=360' height='25'>
+</a>
+<a href='https://discord.gg/jCNXc7PWzM' 
+  class='text-decoration-none'
+  target='_blank'>
+    <img src='https://cdn-icons-png.flaticon.com/512/5968/5968898.png' height='25'>
+</a>
+{% endcapture %}
+<div align="center">
+    <img 
+        src="{{ include.src }}" 
+        alt="pic"
+        {% if include.height %}
+        height="{{ include.height }}"
+        {% else %}
+        height="90"
+        {% endif %}
+        {{ site.data.popover_config | join: " " }}
+        data-bs-content="{{ links_popover }}"
+        style="cursor: pointer;">
+</div>
