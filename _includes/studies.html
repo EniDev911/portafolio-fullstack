@@ -1,0 +1,25 @@
+<section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-5">
+    {% for item in site.data.studies %}
+    <div class="col-10 mx-auto">
+        <div class="card {{ item.style.class | join: ' ' }}">
+            <img src="{{ item.img | relative_url }}" class="card-img-top p-3" alt="pic" style="object-fit: contain;" height="190">
+            <div class="card-body">
+              <h5 class="card-title fw-bold text-center text-uppercase">{{ item.name }}</h5>
+              {% if item.decoration %}
+                <div class="text-center">
+                  <a href="{{ item.decoration.src }}" target="_blank" title="ver">
+                    <img src="{{ item.decoration.img }}" alt="pic" height="100" style="object-fit: contain">
+                  </a>
+                </div>
+              {% endif %}
+            </div>
+            <div class="card-footer text-center">
+              <a href="javascript:void(0);"
+                  onclick="{popup('{{ item.certificate | relative_url }}')}"
+                class="link-warning text-decoration-none">Ver certificado</a>
+            </div>
+          <img src="https://enidev911.github.io/fullstackjsg33/src/chanllenges/module-2/4-sass/bs-card-sass/assets/image/logo_footer.png" class="card-img-bottom w-25 mx-auto pb-2" alt="logo">
+        </div>
+    </div>
+    {% endfor %}
+</section>

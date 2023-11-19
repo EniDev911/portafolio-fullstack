@@ -33,9 +33,10 @@
       "thrid-job-company": "Polisoft",
       "thrid-job-description": "Colaboración productiva con el equipo para conocer los requisitos y las especificaciones empresariales en torno a la gestión del producto."
     },
-    "skills": {
-      "section-title": "competencias"
-    },
+    "extras": {
+        "section-title": "Estudios extras",
+        "fullstack-js-certificate": "https://raw.githubusercontent.com/EniDev911/assets/main/certificado-fullstackjsg33.png"
+      },
     "interest" : {
       "section-title" : "intereses",
       "hobby-1": "<i class='fa-solid fa-gamepad'></i> Videojuegos",
