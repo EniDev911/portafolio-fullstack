@@ -1,4 +1,4 @@
 - 'data-bs-toggle="popover"'
-- 'data-bs-placement="left"'
+- 'data-bs-placement="top"'
 - 'data-bs-html="true"'
 - 'data-bs-custom-class="custom-popover"'

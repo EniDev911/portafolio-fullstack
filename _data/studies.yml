@@ -1,17 +1,21 @@
 - name: "FullStack Javascript"
+  page: https://enidev911.github.io/fullstackjsg33/
   style:
     class:
       - 'bg-olive'
-      - 'text-success'
+      - 'text-darkgreen'
+    link: 'link-dark'
   img: https://enidev911.github.io/fullstackjsg33/src/chanllenges/module-2/4-sass/bs-card-sass/assets/image/g33.png
   certificate: https://raw.githubusercontent.com/EniDev911/assets/main/certificado-fullstackjsg33.png
 - name: "FullStack Ruby On Rails"
+  page: https://mach-911.github.io/fullstack-ror/
   style:
     class:
       - 'bg-dark'
       - 'text-light'
+    link: 'link-warning'
   img: '/assets/png/ruby-on-rails.png'
   decoration:
     src: https://www.acreditta.com/credential/9000349f-4634-4d06-a26b-9af13d6ac952
     img: 'assets/png/credencial-ror.png'
-  certificate: '/assets/png/certificado-ror.png'
+  certificate: '/assets/pdf/certificado-ror.pdf'
