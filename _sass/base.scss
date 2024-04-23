@@ -68,7 +68,7 @@ body {
 }
 
 
-img[alt='logo'] {
+.card:hover img[alt='logo']{
   animation: pulse 0.6s infinite alternate;
 }
 

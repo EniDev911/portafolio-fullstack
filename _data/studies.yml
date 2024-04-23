@@ -19,3 +19,11 @@
     src: https://www.acreditta.com/credential/9000349f-4634-4d06-a26b-9af13d6ac952
     img: 'assets/png/credencial-ror.png'
   certificate: '/assets/pdf/certificado-ror.pdf'
+- name: "FullStack Python"
+  page: https://enidev911.github.io/fullstack-python/
+  style:
+    class:
+      - 'bg-dark'
+      - 'text-light'
+    link: 'link-warning'
+  img: '/assets/svg/python.svg'
