@@ -1,3 +1,3 @@
 url: "https://enidev911.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/portfolio_jekyll" # the subpath of your site, e.g. /blog
+baseurl: "/portafolio-fullstack" # the subpath of your site, e.g. /blog
 title: "EniDev911" # the name of your site, e.g. ACME Corp.
